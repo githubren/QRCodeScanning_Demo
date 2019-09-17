@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_simple_mode"
+        android:text="简单模式"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_picture"
+        android:layout_below="@id/btn_simple_mode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="选择图片"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/choose_picture"
+        android:id="@+id/commission"
+        android:layout_marginTop="20dp"
+        android:text="定制界面"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/generate_QR_code"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/commission"
+        android:layout_marginTop="20dp"
+        android:text="生成二维码图片"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generate_QR_code"
+        android:id="@+id/text"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"
+        android:src="@drawable/ic_launcher_background"/>
+
+</RelativeLayout>
